@@ -33,6 +33,11 @@ def texture_pack():
     return redirect('https://s.fumaz.dev/JKYOY')
 
 
+@app.route('/github')
+def github():
+    return redirect('https://github.com/Fumaz')
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
