@@ -38,6 +38,11 @@ def github():
     return redirect('https://github.com/Fumaz')
 
 
+@app.route('/reddit')
+def reddit():
+    return redirect('https://reddit.com/r/Fumaz')
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
