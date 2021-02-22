@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, send_file
 
 app = Flask(__name__)
 
@@ -41,6 +41,11 @@ def github():
 @app.route('/reddit')
 def reddit():
     return redirect('https://reddit.com/r/Fumaz')
+
+
+@app.route('/wasp')
+def wasp():
+    return send_file('static/wasp.jpg')
 
 
 @app.route('/')
