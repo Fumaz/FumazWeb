@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, send_file
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
@@ -43,23 +43,9 @@ def reddit():
     return redirect('https://reddit.com/r/Fumaz')
 
 
-@app.route('/wasp')
-def wasp():
-    return send_file('static/wasp.jpg')
-
-
-@app.route('/sd832spa02ld')
-def easter():
-    return render_template('easter.html')
-
-
 @app.route('/')
-def index():
-    return render_template('index.html')
-
-
 @app.errorhandler(404)
-def not_found(e):
+def index():
     return render_template('index.html')
 
 
