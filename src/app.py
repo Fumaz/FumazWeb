@@ -48,6 +48,11 @@ def wasp():
     return send_file('static/wasp.jpg')
 
 
+@app.route('/sd832spa02ld')
+def easter():
+    return render_template('easter.html')
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
