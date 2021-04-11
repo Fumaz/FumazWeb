@@ -13,10 +13,10 @@
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/favicon.png') }}">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
 <div class="jumbotron d-flex align-items-center min-vh-100 f-wrapper">
     <div class="container-fluid text-center">
         <!-- Rounded Logo -->
-        <img src="{{ url_for('static', filename='logo.png') }}" class="img-responsive rounded-circle logo"
+        <img src="{{ url_for('static', filename='assets/logo.png') }}" class="img-responsive rounded-circle logo"
              alt="Fumaz's Logo">
         <!-- Name -->
         <h1 class="name">Fumaz</h1>
@@ -70,7 +70,7 @@
         crossorigin="anonymous"></script>
 
 <!-- Custom JS -->
-<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
 

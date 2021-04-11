@@ -44,9 +44,20 @@ def reddit():
 
 
 @app.route('/')
-@app.errorhandler(404)
-def index():
+@app.errorhandler(Exception)
+def index(_=None):
     return render_template('index.html')
+
+
+@app.route('/c/<filename>')
+def cloud(filename: str):
+    return redirect(f'https://cloud.fumaz.dev/s/{filename}/download')
+
+
+@app.route('/upload')
+@app.route('/drop')
+def drop():
+    return redirect(f'https://drop.fumaz.dev')
 
 
 if __name__ == '__main__':
