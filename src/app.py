@@ -82,5 +82,10 @@ def customers():
     return render_template('customers.html')
 
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+
 if __name__ == '__main__':
-    app.run('0.0.0.0')
+    app.run('0.0.0.0', debug=True)

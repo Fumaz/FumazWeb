@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, ">
+
+    <!-- Title -->
+    <title>Fumaz | Projects</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/favicon.png') }}">
+</head>
+<body>
+
+<!-- Wrapper -->
+<div class="container-fluid min-vh-100">
+    <div class="text-center">
+        <br>
+        <!-- Rounded Logo -->
+        <img src="{{ url_for('static', filename='assets/logo.png') }}" class="img-responsive rounded-circle logo"
+             alt="Fumaz's Logo">
+        <br>
+        <h1 class="name">My Projects</h1>
+        <p>Here's a few of my favorite projects!</p>
+        <br>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+                <!-- EmojiCaptchaBot -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/ib44GEz.png"
+                             class="card-img-top" alt="EmojiCaptchaBot">
+                        <div class="card-body">
+                            <h5 class="card-title">Emoji Captcha</h5>
+                            <p class="card-text">
+                                This bot was created as a way for group administrators to protect themselves from
+                                userbots and spammers.<br>
+                                The source code is available on GitHub.
+                                <br>
+                                <br>
+                            </p>
+                            <a href="https://t.me/EmojiCaptchaBot" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                            <a href="https://github.com/Fumaz/EmojiCaptchaBot" class="btn btn-primary"><i
+                                    class="fas fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TTSBot -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/LbflKmx.png"
+                             class="card-img-top" alt="TTSBot">
+                        <div class="card-body">
+                            <h5 class="card-title">Text To Speech</h5>
+                            <p class="card-text">
+                                This bot allows you to turn any text into an audio directly on Telegram.
+                                It works in private chats, in groups, and even inline!<br>
+                                The source code is available on GitHub.
+                                <br>
+                                <br>
+                            </p>
+                            <a href="https://t.me/TTSBot" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                            <a href="https://github.com/Fumaz/TTSBot" class="btn btn-primary"><i
+                                    class="fas fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/CslTRZh.png"
+                             class="card-img-top" alt="Status">
+                        <div class="card-body">
+                            <h5 class="card-title">Status</h5>
+                            <p class="card-text">
+                                I made a website that allows you to check the status of all my services in real time.
+                                It allows me to track which services are functional, and which are not.<br>
+                                The source code is available on GitHub.
+                                <br>
+                            </p>
+                            <a href="https://status.fumaz.dev" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                            <a href="https://github.com/Fumaz/StatusWebpage" class="btn btn-primary"><i
+                                    class="fas fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lyrics Seeker -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/H8CTedS.png"
+                             class="card-img-top" alt="Lyrics Seeker">
+                        <div class="card-body">
+                            <h5 class="card-title">Lyrics Seeker</h5>
+                            <p class="card-text">
+                                This bot was created as a way for users to find any song's info and lyrics.<br>
+                                It works both in private chats and inline!<br>
+                                The source code is available on GitHub.
+                                <br>
+                            </p>
+                            <a href="https://t.me/LyricsSeekerBot" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                            <a href="https://github.com/Fumaz/LyricsBot" class="btn btn-primary"><i
+                                    class="fas fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screenshots -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/wz8verk.png"
+                             class="card-img-top" alt="Screenshots">
+                        <div class="card-body">
+                            <h5 class="card-title">Screenshots API - Client</h5>
+                            <p class="card-text">
+                                I coded an API and a script that automatically uploads any screenshot I take
+                                using flameshot to my web server, and copies the generated link to my clipboard.<br>
+                                The source code is available on GitHub.
+                                <br>
+                            </p>
+                            <a href="https://i.fumaz.dev" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                            <a href="https://github.com/Fumaz/Screenshots-API" class="btn btn-primary"><i
+                                    class="fas fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HaveIBeenFacebooked -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/u3S99Aa.png"
+                             class="card-img-top" alt="HaveIBeenFacebooked">
+                        <div class="card-body">
+                            <h5 class="card-title">Have I Been Facebooked?</h5>
+                            <p class="card-text">
+                                Have I Been Facebooked was a website that allowed you to check if your data was leaked
+                                in the April 2021 data leak.<br>
+                                The source code is still available on GitHub.
+                                <br>
+                                <br>
+                            </p>
+                            <a href="https://haveibeenfacebooked.com" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                            <a href="https://github.com/Fumaz/HaveIBeenFacebooked-API" class="btn btn-primary"><i
+                                    class="fas fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stickers Tools -->
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="https://i.imgur.com/keIdQU3.png"
+                             class="card-img-top" alt="Stickers Tools">
+                        <div class="card-body">
+                            <h5 class="card-title">Stickers Tools</h5>
+                            <p class="card-text">
+                                I made this bot to facilitate the process of creating telegram stickers.<br>
+                                It has multiple features, so be sure to check it out!
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                            <a href="https://t.me/StickersToolsBot" class="btn btn-primary"><i
+                                    class="fas fa-mouse-pointer"></i> Try it out!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid dynamic-footer">
+    <span class="text-muted">Copyright © 2021 Fumaz. All rights reserved.</span>
+</div>
+
+<!-- FontAwesome JS -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/29da107a8d.js"></script>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+
