@@ -54,10 +54,32 @@ def cloud(filename: str):
     return redirect(f'https://cloud.fumaz.dev/s/{filename}/download')
 
 
+@app.route('/cw/<filename>')
+def preview(filename: str):
+    return redirect(f'https://cloud.fumaz.dev/s/{filename}')
+
+
+@app.route('/p/<path>')
+@app.route('/p')
+@app.route('/p/')
+def paste(path: str = ''):
+    return redirect(f'https://paste.fumaz.dev/{path}')
+
+
+@app.route('/s/<path>')
+def shortener(path: str):
+    return redirect(f'https://s.fumaz.dev/{path}')
+
+
 @app.route('/upload')
 @app.route('/drop')
 def drop():
     return redirect(f'https://drop.fumaz.dev')
+
+
+@app.route('/customers')
+def customers():
+    return render_template('customers.html')
 
 
 if __name__ == '__main__':
